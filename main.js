@@ -113,10 +113,9 @@ $(() => {
 	var controller = new Controller();
   var genetic = new Genetic();
   $('#btnStart').click(function(){
-    for(var it in genetic.population) {
-      // console.log(genetic.population[it])
-      controller.drawPath(genetic.population[it]);
-    }
-    // controller.drawPath(genetic.population[0]);
+    // for(var it in genetic.population) {
+    //   controller.drawPath(genetic.population[it]);
+    // }
+    controller.drawPath(genetic.population[0]);
   });
 });
